@@ -9,3 +9,7 @@ I will try to add functionality later, like
 Some issues so far:
   - I tried to put image for background, but it looks bat if it repeats and it ends if I add more content.
   - The footer moves when you scroll up and down, it stays in front of the content, not below.
+
+# update No1
+Pictures now pop-up as they are clicked on with a close button,
+which is pretty cool, but some seem to be displayed at low resolution.
