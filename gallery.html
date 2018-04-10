@@ -3,9 +3,10 @@
 <head>
 	<title>Image gallery</title>
 	<link rel="stylesheet" type="text/css" href="gallery-style.css">
-	<script src="gallery-func.js"></script>
+	
 </head>
 <body>
+
 	<div class="bg">
 		<div class="container">
 			<button id="upload" onclick="uploadImage()">Upload</button>
@@ -14,17 +15,26 @@
 		</div>
 
 		<div class="img-container">
-			<img src='res/bentley.jpg'>
-			
-			<img src='res/ferrary.jpg'>
-			<img src='res/moskvich.jpg'>
-			<img src='res/must tang.jpg'>
-			<img src='res/old porsche.jpg'>
-			<img src='res/old school.jpg'>
-			<img src='res/porshe.jpg'>
-			<img src='res/vw van.jpg'>
-			<img src='res/white tesla.jpg'>
+			<img src='res/bentley.jpg' id="myImg" onClick="getId(this.id);" alt="Bentley">
+			<img src='res/ferrary.jpg' id="myImg2" onClick="getId(this.id);" alt="Ferrary">
+			<img src='res/moskvich.jpg' id="myImg3" onClick="getId(this.id);" alt="Moskvich">
+			<img src='res/must tang.jpg' id="myImg4" onClick="getId(this.id);" alt="Mustang">
+			<img src='res/old porsche.jpg' id="myImg5" onClick="getId(this.id);" alt="Porsche">
+			<img src='res/old school.jpg' id="myImg6" onClick="getId(this.id);" alt="Old school">
+			<img src='res/porshe.jpg' id="myImg7" onClick="getId(this.id);" alt="Porsche">
+			<img src='res/vw van.jpg' id="myImg8" onClick="getId(this.id);" alt="VW">
+			<img src='res/white tesla.jpg' id="myImg9" onClick="getId(this.id);" alt="Tesla">
 		</div>
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+		  <!-- The Close Button -->
+		  <span class="close">&times;</span>
+		  <!-- Modal Content (The Image) -->
+		  <img class="modal-content" id="img01">
+		  <!-- Modal Caption (Image Text) -->
+		  <div id="caption"></div>
+		</div>
+		<script src="gallery-func.js"></script>
 		
 		<footer>
 	  		<p>Under construction. Images by <a href="https://unsplash.com/" target="_blank">unsplash.</a></p>
