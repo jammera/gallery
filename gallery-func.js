@@ -43,7 +43,10 @@ if(myImage.width === 0) {
 	myImage.width = myImage.naturalWidth;
 }
 
-Tesseract.recognize(myImage)
+Tesseract.recognize(myImage, {
+    lang: 'equ',
+    tessedit_char_blacklist: 'I'
+})
 .then(function(result){
     console.log(result)
 })
