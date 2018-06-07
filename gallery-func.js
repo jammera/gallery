@@ -23,7 +23,7 @@ const getId = (id) => {
     modalImg.src = img.src;
     captionText.innerHTML = img.alt;
     console.log(modal.style.display, modalImg, captionText.innerHTML)
-	console.log(id);
+	
 }
 
 // Get the <span> element that closes the modal
@@ -32,3 +32,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
   modal.style.display = "none";
 }
+
+var myImage = document.getElementById("myImg10");
+Tesseract.recognize(myImage)
+.then(function(result){
+    console.log(result)
+})
