@@ -34,6 +34,15 @@ span.onclick = function() {
 }
 
 var myImage = document.getElementById("myImg10");
+
+if(myImage.height === 0) {
+	myImage.height = myImage.naturalHeight;
+}
+
+if(myImage.width === 0) {
+	myImage.width = myImage.naturalWidth;
+}
+
 Tesseract.recognize(myImage)
 .then(function(result){
     console.log(result)
